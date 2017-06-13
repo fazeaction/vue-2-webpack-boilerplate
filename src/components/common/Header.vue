@@ -16,7 +16,7 @@
 
 <script>
 
-    import store from './../../data/vuex/store'
+    import { mapGetters } from 'vuex'
 
     export default {
         data() {
@@ -29,12 +29,12 @@
             }
         },
         computed: {
-            pagesVisited() {
-                return store.state.count
-            }
+          ...mapGetters({
+            pagesVisited: 'pagesVisited',
+          }),
         },
         methods: {
-            resetCounter() { store.commit('reset') }
+            resetCounter() { this.$store.dispatch('reset') }
         }
     }
 

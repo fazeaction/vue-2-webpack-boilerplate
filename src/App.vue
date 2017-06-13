@@ -18,7 +18,7 @@ export default {
     name: 'app',
     methods: {
         enter(el, done) {
-            this.$store.commit('increment')
+            this.$store.dispatch('increment')
             if (this.$refs.page.enter) this.$refs.page.enter(el, done)
             else TweenMax.to(el, 0.5, { opacity: 1, y: 0, onComplete: done })
         },
