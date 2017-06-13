@@ -1,6 +1,3 @@
-//
-//  Contact.vue
-
 <template>
     <div class="contact" id="contact">
         <h1>{{ msg }}</h1>

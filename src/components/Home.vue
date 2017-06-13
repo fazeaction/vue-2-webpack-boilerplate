@@ -1,6 +1,3 @@
-//
-//  Home.vue
-
 <template>
     <div class="home" id="home">
         <h1>{{ msg }}</h1>

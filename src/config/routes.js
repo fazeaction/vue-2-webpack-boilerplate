@@ -1,6 +1,3 @@
-//
-// routes.js
-
 import App from './../App'
 
 const routes = [

@@ -1,6 +1,3 @@
-//
-// Header.vue
-
 <template>
     <header>
         <ul>

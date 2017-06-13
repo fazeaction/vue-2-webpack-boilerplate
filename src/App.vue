@@ -1,6 +1,3 @@
-//
-// App.vue
-
 <template>
     <div id="app">
         <a href="https://vuejs.org/" target="_blank"><img class="vue-icon" src="./assets/img/logo.png" alt="Vue icon" /></a>
@@ -15,12 +12,10 @@
 
 import { TweenMax } from 'gsap'
 
-import store from './data/vuex/store'
 import HeaderComponent from './components/common/Header'
 
 export default {
     name: 'app',
-    store,
     methods: {
         enter(el, done) {
             store.commit('increment')

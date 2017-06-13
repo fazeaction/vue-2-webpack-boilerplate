@@ -1,6 +1,3 @@
-//
-//  About.vue
-
 <template>
     <div class="about" id="about">
         <h1>{{ msg }}</h1>
