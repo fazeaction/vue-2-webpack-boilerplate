@@ -1,13 +1,12 @@
-import Vue from 'vue'
 import * as types from '../mutation-types'
 import api from './../../api/index'
 
 const state = {
-  // example: false,
+  count: 0
 }
 
 const getters = {
-  // example: () => state.example,
+  pagesVisited: () => state.count,
 }
 
 const actions = {
@@ -17,10 +16,12 @@ const actions = {
       commit(types.RECEIVE_DATA)
     })
   },
+  increment: () => { state.count++ },
+  reset: () => { state.count = 1 }
 }
 
 const mutations = {
-  [types.RECEIVE_DATA](state) {
+  [types.RECEIVE_DATA]() {
     console.log(state)
   },
 }
